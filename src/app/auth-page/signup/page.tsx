@@ -280,7 +280,10 @@ const SignUp: React.FC = () => {
                 </svg>
 
                 {/* Social Media Section */}
-                <div className="mt-8 flex justify-center gap-8 text-4xl text-gray-700">
+                <div className="mt-8 text-center text-gray-700">
+                    <p className="text-base text-gray-500">Developed by Tushar Kanti Dey</p>
+                    <p className="text-base text-gray-500">Connect with me</p>
+                  <div className="mt-4 flex justify-center gap-8 text-4xl">
                   <a
                     href="https://github.com/Tusharxhub"
                     target="_blank"
@@ -289,7 +292,6 @@ const SignUp: React.FC = () => {
                   >
                     <FaGithub />
                   </a>
-
                   <a
                     href="https://www.linkedin.com/in/tushar-kanti-dey-86185b28b/"
                     target="_blank"
@@ -298,14 +300,12 @@ const SignUp: React.FC = () => {
                   >
                     <FaLinkedin />
                   </a>
-
                   <a
                     href="mailto:t.k.d.dey2033929837@gmail.com"
                     className="hover:text-red-500 transition-transform transform hover:scale-110"
                   >
                     <MdEmail />
                   </a>
-
                   <a
                     href="https://www.instagram.com/tushardevx01/"
                     target="_blank"
@@ -314,6 +314,7 @@ const SignUp: React.FC = () => {
                   >
                     <FaInstagram />
                   </a>
+                  </div>
                 </div>
               </span>
             </div>
