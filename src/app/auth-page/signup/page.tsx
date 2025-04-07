@@ -12,6 +12,8 @@ import {
   MailIcon,
   UserIcon,
 } from "lucide-react";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const SignUp: React.FC = () => {
   const [user, setUser] = useState({
@@ -135,7 +137,7 @@ const SignUp: React.FC = () => {
       <ComponentHeader pageName="Sign Up" />
 
       <div className="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-        <div className="flex flex-wrap items-center" onSubmit={handleSubmit}>
+        <div className="flex flex-wrap items-center">
           <div className="hidden w-full xl:block xl:w-1/2">
             <div className="px-26 py-17.5 text-center">
               <Link className="mb-5.5 inline-block" href="/">
@@ -196,7 +198,7 @@ const SignUp: React.FC = () => {
                     fill="#CCCCCC"
                   />
                   <path
-                    d="M204.934 209.464H102.469V210.423H204.934V209.464Z"
+                    d="M204.934 209.464H123.208V210.423H204.934V209.464Z"
                     fill="#CCCCCC"
                   />
                   <path
@@ -204,7 +206,7 @@ const SignUp: React.FC = () => {
                     fill="#3056D3"
                   />
                   <path
-                    d="M204.934 241.797H102.469V242.757H204.934V241.797Z"
+                    d="M204.934 241.797H123.208V242.757H204.934V241.797Z"
                     fill="#CCCCCC"
                   />
                   <path
@@ -276,6 +278,43 @@ const SignUp: React.FC = () => {
                     fill="#1C2434"
                   />
                 </svg>
+
+                {/* Social Media Section */}
+                <div className="mt-8 flex justify-center gap-8 text-4xl text-gray-700">
+                  <a
+                    href="https://github.com/Tusharxhub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-black transition-transform transform hover:scale-110"
+                  >
+                    <FaGithub />
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/tushar-kanti-dey-86185b28b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600 transition-transform transform hover:scale-110"
+                  >
+                    <FaLinkedin />
+                  </a>
+
+                  <a
+                    href="mailto:t.k.d.dey2033929837@gmail.com"
+                    className="hover:text-red-500 transition-transform transform hover:scale-110"
+                  >
+                    <MdEmail />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/tushardevx01/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-pink-500 transition-transform transform hover:scale-110"
+                  >
+                    <FaInstagram />
+                  </a>
+                </div>
               </span>
             </div>
           </div>
@@ -434,6 +473,11 @@ const SignUp: React.FC = () => {
                   </div>
                 </div>
 
+                <div className="flex gap-8 text-4xl text-gray-700">
+                  
+                    
+                </div>
+
                 {errors && <div className="mb-4 text-red">{errors}</div>}
                 <div className="mb-5">
                   <button
@@ -463,6 +507,45 @@ const SignUp: React.FC = () => {
               </div>
             </div>
           </form>
+        </div>
+      </div>
+      <div className="fixed bottom-4 left-4 flex flex-col items-center space-y-4">
+        <h1 className="text-lg font-bold text-gray-800">Connect with Me</h1>
+        <p className="text-sm text-gray-600">Developed by Tushar Kanti Dey</p>
+        <div className="flex flex-col gap-4 text-2xl text-gray-700">
+          <a
+            href="https://github.com/Tusharxhub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black transition-transform transform hover:scale-110"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/tushar-kanti-dey-86185b28b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-transform transform hover:scale-110"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="mailto:t.k.d.dey2033929837@gmail.com"
+            className="hover:text-red-500 transition-transform transform hover:scale-110"
+          >
+            <MdEmail />
+          </a>
+
+          <a
+            href="https://www.instagram.com/tushardevx01/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-500 transition-transform transform hover:scale-110"
+          >
+            <FaInstagram />
+          </a>
         </div>
       </div>
     </DefaultLayout>
