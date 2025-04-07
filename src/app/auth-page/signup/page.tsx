@@ -509,45 +509,7 @@ const SignUp: React.FC = () => {
           </form>
         </div>
       </div>
-      <div className="fixed bottom-4 left-4 flex flex-col items-center space-y-4">
-        <h1 className="text-lg font-bold text-gray-800">Connect with Me</h1>
-        <p className="text-sm text-gray-600">Developed by Tushar Kanti Dey</p>
-        <div className="flex flex-col gap-4 text-2xl text-gray-700">
-          <a
-            href="https://github.com/Tusharxhub"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black transition-transform transform hover:scale-110"
-          >
-            <FaGithub />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/tushar-kanti-dey-86185b28b/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-600 transition-transform transform hover:scale-110"
-          >
-            <FaLinkedin />
-          </a>
-
-          <a
-            href="mailto:t.k.d.dey2033929837@gmail.com"
-            className="hover:text-red-500 transition-transform transform hover:scale-110"
-          >
-            <MdEmail />
-          </a>
-
-          <a
-            href="https://www.instagram.com/tushardevx01/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-pink-500 transition-transform transform hover:scale-110"
-          >
-            <FaInstagram />
-          </a>
-        </div>
-      </div>
+      
     </DefaultLayout>
   );
 };
